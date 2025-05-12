@@ -1,0 +1,6 @@
+# Ignore BOT files
+BOT
+**/BOT
+
+# Ignore environment variables file
+.env

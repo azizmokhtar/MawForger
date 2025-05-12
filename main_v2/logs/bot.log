@@ -1,0 +1,340 @@
+2025-05-12 15:14:44 - INFO - [main] Starting trading bot...
+2025-05-12 15:14:44 - INFO - [main] Configuration loaded
+2025-05-12 15:14:44 - INFO - [main] Event Bus initiated
+2025-05-12 15:15:08 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 15:15:32 - INFO - [main] Starting trading bot...
+2025-05-12 15:15:32 - INFO - [main] Configuration loaded
+2025-05-12 15:15:32 - INFO - [main] Event Bus initiated
+2025-05-12 15:16:10 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 15:16:10 - INFO - [main] Telegram notifier initiated
+2025-05-12 15:16:10 - INFO - [main] Shared services initialized
+2025-05-12 15:16:10 - INFO - [main] Event handlers registered
+2025-05-12 15:19:06 - INFO - [main] Starting trading bot...
+2025-05-12 15:19:06 - INFO - [main] Configuration loaded
+2025-05-12 15:19:06 - INFO - [main] Event Bus initiated
+2025-05-12 15:19:24 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 15:19:25 - INFO - [main] Telegram notifier initiated
+2025-05-12 15:19:25 - INFO - [main] Shared services initialized
+2025-05-12 15:19:25 - INFO - [main] Event handlers registered
+2025-05-12 15:19:25 - INFO - [main] WebSocket listener started
+2025-05-12 15:19:25 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 15:19:25 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 15:19:25 - INFO - [Listener] Subscribed to webData2 updates
+2025-05-12 17:42:16 - INFO - [main] Configuration loaded
+2025-05-12 17:42:16 - INFO - [main] Telegram notifier initiated
+2025-05-12 17:42:16 - INFO - [main] Event Bus initiated
+2025-05-12 17:42:34 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 17:42:34 - INFO - [main] Shared services initialized
+2025-05-12 17:42:34 - INFO - [main] Event handlers registered
+2025-05-12 17:43:51 - INFO - [main] Configuration loaded
+2025-05-12 17:43:51 - INFO - [main] Telegram notifier initiated
+2025-05-12 17:43:51 - INFO - [main] Event Bus initiated
+2025-05-12 17:44:04 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 17:44:04 - INFO - [main] Shared services initialized
+2025-05-12 17:44:04 - INFO - [main] Event handlers registered
+2025-05-12 17:44:04 - INFO - [main] WebSocket listener started
+2025-05-12 17:44:04 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 17:44:05 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 17:44:05 - INFO - [Listener] Subscribed to webData2 updates
+2025-05-12 17:48:14 - INFO - [main] Configuration loaded
+2025-05-12 17:48:14 - INFO - [main] Telegram notifier initiated
+2025-05-12 17:48:14 - INFO - [main] Event Bus initiated
+2025-05-12 17:48:28 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 17:48:28 - INFO - [main] Shared services initialized
+2025-05-12 17:48:28 - INFO - [main] Event handlers registered
+2025-05-12 17:48:28 - INFO - [main] WebSocket listener started
+2025-05-12 17:48:28 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 17:48:29 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 17:48:29 - INFO - [Listener] Subscribed to webData2 updates
+2025-05-12 22:05:46 - INFO - [main] Configuration loaded
+2025-05-12 22:05:47 - INFO - [main] Telegram notifier initiated
+2025-05-12 22:05:47 - INFO - [main] Event Bus initiated
+2025-05-12 22:06:08 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 22:06:08 - INFO - [main] Shared services initialized
+2025-05-12 22:06:08 - INFO - [main] Event handlers registered
+2025-05-12 22:06:08 - INFO - [MawLauncher] Telegram notifier initiated
+2025-05-12 22:08:18 - INFO - [main] Configuration loaded
+2025-05-12 22:08:19 - INFO - [main] Telegram notifier initiated
+2025-05-12 22:08:19 - INFO - [main] Event Bus initiated
+2025-05-12 22:08:32 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 22:08:32 - INFO - [main] Shared services initialized
+2025-05-12 22:08:32 - INFO - [main] Event handlers registered
+2025-05-12 22:08:32 - INFO - [MawLauncher] Telegram notifier initiated
+2025-05-12 22:08:35 - INFO - [MawLauncher] Set leverage for ["HYPE"
+2025-05-12 22:08:35 - ERROR - [MawLauncher] Error placing first order for ["HYPE": unsupported operand type(s) for *: 'NoneType' and 'float'
+2025-05-12 22:08:36 - INFO - [MawLauncher] Set leverage for "SUI"
+2025-05-12 22:08:36 - ERROR - [MawLauncher] Error placing first order for "SUI": unsupported operand type(s) for *: 'NoneType' and 'float'
+2025-05-12 22:08:36 - INFO - [MawLauncher] Set leverage for "ADA"]
+2025-05-12 22:08:36 - ERROR - [MawLauncher] Error placing first order for "ADA"]: unsupported operand type(s) for *: 'NoneType' and 'float'
+2025-05-12 22:08:37 - INFO - [main] WebSocket listener started
+2025-05-12 22:08:37 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 22:08:37 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 22:08:37 - INFO - [Listener] Subscribed to webData2 updates
+2025-05-12 22:12:34 - INFO - [main] Configuration loaded
+2025-05-12 22:12:35 - INFO - [main] Telegram notifier initiated
+2025-05-12 22:12:35 - INFO - [main] Event Bus initiated
+2025-05-12 22:12:43 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 22:12:43 - INFO - [main] Shared services initialized
+2025-05-12 22:12:43 - INFO - [main] Event handlers registered
+2025-05-12 22:12:43 - INFO - [MawLauncher] Telegram notifier initiated
+2025-05-12 22:12:47 - INFO - [MawLauncher] Set leverage for HYPE
+2025-05-12 22:12:55 - ERROR - [MawLauncher] Error placing first order for HYPE: StateManager.add_position() missing 1 required positional argument: 'pnl'
+2025-05-12 22:12:56 - INFO - [MawLauncher] Set leverage for SUI
+2025-05-12 22:13:04 - ERROR - [MawLauncher] Error placing first order for SUI: StateManager.add_position() missing 1 required positional argument: 'pnl'
+2025-05-12 22:13:05 - INFO - [MawLauncher] Set leverage for ADA
+2025-05-12 22:13:13 - ERROR - [MawLauncher] Error placing first order for ADA: StateManager.add_position() missing 1 required positional argument: 'pnl'
+2025-05-12 22:13:14 - INFO - [main] WebSocket listener started
+2025-05-12 22:13:14 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 22:13:15 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 22:13:15 - INFO - [Listener] Subscribed to webData2 updates
+2025-05-12 22:13:16 - WARNING - [Listener] Unexpected open position found: SUI, added to manager
+2025-05-12 22:13:16 - WARNING - [Listener] Unexpected open position found: ADA, added to manager
+2025-05-12 22:13:16 - WARNING - [Listener] Unexpected open position found: HYPE, added to manager
+2025-05-12 22:13:16 - WARNING - [Listener] Unexpected open position found: SUI, added to manager
+2025-05-12 22:13:16 - WARNING - [Listener] Unexpected open position found: ADA, added to manager
+2025-05-12 22:13:16 - WARNING - [Listener] Unexpected open position found: HYPE, added to manager
+2025-05-12 22:13:21 - WARNING - [Listener] Unexpected open position found: SUI, added to manager
+2025-05-12 22:13:21 - WARNING - [Listener] Unexpected open position found: ADA, added to manager
+2025-05-12 22:13:21 - WARNING - [Listener] Unexpected open position found: HYPE, added to manager
+2025-05-12 22:13:26 - WARNING - [Listener] Unexpected open position found: SUI, added to manager
+2025-05-12 22:13:26 - WARNING - [Listener] Unexpected open position found: ADA, added to manager
+2025-05-12 22:13:26 - WARNING - [Listener] Unexpected open position found: HYPE, added to manager
+2025-05-12 22:13:31 - WARNING - [Listener] Unexpected open position found: SUI, added to manager
+2025-05-12 22:13:31 - WARNING - [Listener] Unexpected open position found: ADA, added to manager
+2025-05-12 22:13:31 - WARNING - [Listener] Unexpected open position found: HYPE, added to manager
+2025-05-12 22:13:36 - WARNING - [Listener] Unexpected open position found: SUI, added to manager
+2025-05-12 22:13:36 - WARNING - [Listener] Unexpected open position found: ADA, added to manager
+2025-05-12 22:13:36 - WARNING - [Listener] Unexpected open position found: HYPE, added to manager
+2025-05-12 22:20:32 - INFO - [main] Configuration loaded
+2025-05-12 22:20:32 - INFO - [main] Telegram notifier initiated
+2025-05-12 22:20:32 - INFO - [main] Event Bus initiated
+2025-05-12 22:20:47 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 22:20:47 - INFO - [main] Shared services initialized
+2025-05-12 22:20:47 - INFO - [main] Event handlers registered
+2025-05-12 22:20:47 - INFO - [MawLauncher] Telegram notifier initiated
+2025-05-12 22:20:51 - INFO - [MawLauncher] Set leverage for HYPE
+2025-05-12 22:20:59 - ERROR - [MawLauncher] Error placing first order for HYPE: StateManager.add_position() missing 1 required positional argument: 'pnl'
+2025-05-12 22:21:00 - INFO - [MawLauncher] Set leverage for SUI
+2025-05-12 22:21:09 - ERROR - [MawLauncher] Error placing first order for SUI: StateManager.add_position() missing 1 required positional argument: 'pnl'
+2025-05-12 22:21:10 - INFO - [MawLauncher] Set leverage for ADA
+2025-05-12 22:26:13 - INFO - [main] Configuration loaded
+2025-05-12 22:26:13 - INFO - [main] Telegram notifier initiated
+2025-05-12 22:26:13 - INFO - [main] Event Bus initiated
+2025-05-12 22:26:28 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 22:26:28 - INFO - [main] Shared services initialized
+2025-05-12 22:26:28 - INFO - [main] Event handlers registered
+2025-05-12 22:26:28 - INFO - [MawLauncher] Telegram notifier initiated
+2025-05-12 22:26:32 - INFO - [MawLauncher] Set leverage for HYPE
+2025-05-12 22:26:40 - INFO - [MawLauncher] Opened first position for HYPE
+2025-05-12 22:26:41 - INFO - [MawLauncher] Set leverage for SUI
+2025-05-12 22:26:49 - INFO - [MawLauncher] Opened first position for SUI
+2025-05-12 22:26:51 - INFO - [MawLauncher] Set leverage for ADA
+2025-05-12 22:26:59 - INFO - [MawLauncher] Opened first position for ADA
+2025-05-12 22:26:59 - INFO - [main] WebSocket listener started
+2025-05-12 22:26:59 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 22:27:00 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 22:27:00 - INFO - [Listener] Subscribed to webData2 updates
+2025-05-12 22:27:01 - ERROR - [Listener] Unexpected error in WebSocket: StateManager.update_position() got an unexpected keyword argument 'average_buy_price'
+Traceback (most recent call last):
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 48, in start
+    await self._listen_messages(websocket)
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 95, in _listen_messages
+    await asyncio.gather(
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 89, in process_messages
+    await self._handle_web_data2(data)
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 155, in _handle_web_data2
+    await self.state_manager.update_position(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: StateManager.update_position() got an unexpected keyword argument 'average_buy_price'
+2025-05-12 22:33:56 - INFO - [main] Configuration loaded
+2025-05-12 22:33:57 - INFO - [main] Telegram notifier initiated
+2025-05-12 22:33:57 - INFO - [main] Event Bus initiated
+2025-05-12 22:34:10 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 22:34:10 - INFO - [main] Shared services initialized
+2025-05-12 22:34:10 - INFO - [main] Event handlers registered
+2025-05-12 22:34:10 - INFO - [MawLauncher] Telegram notifier initiated
+2025-05-12 22:34:14 - INFO - [MawLauncher] Set leverage for HYPE
+2025-05-12 22:34:23 - INFO - [MawLauncher] Opened first position for HYPE
+2025-05-12 22:34:24 - INFO - [MawLauncher] Set leverage for SUI
+2025-05-12 22:34:33 - INFO - [MawLauncher] Opened first position for SUI
+2025-05-12 22:34:34 - INFO - [MawLauncher] Set leverage for ADA
+2025-05-12 22:34:43 - INFO - [MawLauncher] Opened first position for ADA
+2025-05-12 22:34:43 - INFO - [main] WebSocket listener started
+2025-05-12 22:34:43 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 22:34:44 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 22:34:44 - INFO - [Listener] Subscribed to webData2 updates
+2025-05-12 22:34:46 - ERROR - [Listener] Unexpected error in WebSocket: StateManager.update_position() got an unexpected keyword argument 'average_buy_price'
+Traceback (most recent call last):
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 48, in start
+    await self._listen_messages(websocket)
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 95, in _listen_messages
+    await asyncio.gather(
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 89, in process_messages
+    await self._handle_web_data2(data)
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 155, in _handle_web_data2
+    await self.state_manager.update_position(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: StateManager.update_position() got an unexpected keyword argument 'average_buy_price'
+2025-05-12 22:35:14 - ERROR - [Listener] Connection closed during heartbeat
+2025-05-12 22:44:51 - INFO - [main] Configuration loaded
+2025-05-12 22:44:52 - INFO - [main] Telegram notifier initiated
+2025-05-12 22:44:52 - INFO - [main] Event Bus initiated
+2025-05-12 22:45:09 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 22:45:09 - INFO - [main] Shared services initialized
+2025-05-12 22:45:09 - INFO - [main] Event handlers registered
+2025-05-12 22:45:30 - INFO - [main] Configuration loaded
+2025-05-12 22:45:30 - INFO - [main] Telegram notifier initiated
+2025-05-12 22:45:30 - INFO - [main] Event Bus initiated
+2025-05-12 22:45:38 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 22:45:38 - INFO - [main] Shared services initialized
+2025-05-12 22:45:38 - INFO - [main] Event handlers registered
+2025-05-12 22:45:38 - INFO - [MawLauncher] Telegram notifier initiated
+2025-05-12 22:45:42 - INFO - [MawLauncher] Set leverage for HYPE
+2025-05-12 22:45:52 - INFO - [MawLauncher] Opened first position for HYPE
+2025-05-12 22:45:53 - INFO - [MawLauncher] Set leverage for SUI
+2025-05-12 22:46:02 - INFO - [MawLauncher] Opened first position for SUI
+2025-05-12 22:46:03 - INFO - [MawLauncher] Set leverage for ADA
+2025-05-12 22:46:12 - INFO - [MawLauncher] Opened first position for ADA
+2025-05-12 22:46:12 - INFO - [main] WebSocket listener started
+2025-05-12 22:46:12 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 22:46:13 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 22:46:13 - INFO - [Listener] Subscribed to webData2 updates
+2025-05-12 22:46:15 - ERROR - [Listener] Unexpected error in WebSocket: PositionUpdatedEvent.__init__() got an unexpected keyword argument 'symbol'
+Traceback (most recent call last):
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 48, in start
+    await self._listen_messages(websocket)
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 95, in _listen_messages
+    await asyncio.gather(
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 89, in process_messages
+    await self._handle_web_data2(data)
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 157, in _handle_web_data2
+    update=PositionUpdatedEvent(
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: PositionUpdatedEvent.__init__() got an unexpected keyword argument 'symbol'
+2025-05-12 22:46:43 - ERROR - [Listener] Connection closed during heartbeat
+2025-05-12 22:53:44 - INFO - [main] Configuration loaded
+2025-05-12 22:53:45 - INFO - [main] Telegram notifier initiated
+2025-05-12 22:53:45 - INFO - [main] Event Bus initiated
+2025-05-12 22:53:57 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 22:53:57 - INFO - [main] Shared services initialized
+2025-05-12 22:53:57 - INFO - [main] Event handlers registered
+2025-05-12 22:53:57 - INFO - [MawLauncher] Telegram notifier initiated
+2025-05-12 22:54:00 - INFO - [MawLauncher] Set leverage for HYPE
+2025-05-12 22:54:10 - INFO - [MawLauncher] Opened first position for HYPE
+2025-05-12 22:54:11 - INFO - [MawLauncher] Set leverage for SUI
+2025-05-12 22:54:20 - INFO - [MawLauncher] Opened first position for SUI
+2025-05-12 22:54:22 - INFO - [MawLauncher] Set leverage for ADA
+2025-05-12 22:54:31 - INFO - [MawLauncher] Opened first position for ADA
+2025-05-12 22:54:31 - INFO - [main] WebSocket listener started
+2025-05-12 22:54:31 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 22:54:32 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 22:54:32 - INFO - [Listener] Subscribed to webData2 updates
+2025-05-12 22:54:34 - ERROR - [Listener] Unexpected error in WebSocket: PositionUpdatedEvent.__init__() got an unexpected keyword argument 'updates'
+Traceback (most recent call last):
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 48, in start
+    await self._listen_messages(websocket)
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 95, in _listen_messages
+    await asyncio.gather(
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 89, in process_messages
+    await self._handle_web_data2(data)
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 155, in _handle_web_data2
+    await self.state_manager.update_position(
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/state/StateManager.py", line 48, in update_position
+    await self.event_bus.publish("position_updated", PositionUpdatedEvent(symbol=symbol, updates=update.__dict__))
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PositionUpdatedEvent.__init__() got an unexpected keyword argument 'updates'
+2025-05-12 23:00:27 - INFO - [main] Configuration loaded
+2025-05-12 23:00:27 - INFO - [main] Telegram notifier initiated
+2025-05-12 23:00:27 - INFO - [main] Event Bus initiated
+2025-05-12 23:01:05 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 23:01:05 - INFO - [main] Shared services initialized
+2025-05-12 23:01:05 - INFO - [main] Event handlers registered
+2025-05-12 23:01:05 - INFO - [MawLauncher] Telegram notifier initiated
+2025-05-12 23:01:09 - INFO - [MawLauncher] Set leverage for HYPE
+2025-05-12 23:01:18 - INFO - [MawLauncher] Opened first position for HYPE
+2025-05-12 23:01:19 - INFO - [MawLauncher] Set leverage for SUI
+2025-05-12 23:01:27 - INFO - [MawLauncher] Opened first position for SUI
+2025-05-12 23:01:29 - INFO - [MawLauncher] Set leverage for ADA
+2025-05-12 23:01:39 - INFO - [MawLauncher] Opened first position for ADA
+2025-05-12 23:01:39 - INFO - [main] WebSocket listener started
+2025-05-12 23:01:39 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 23:01:40 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 23:01:40 - INFO - [Listener] Subscribed to webData2 updates
+2025-05-12 23:01:41 - ERROR - [Listener] Unexpected error in WebSocket: PositionUpdatedEvent.__init__() got an unexpected keyword argument 'updates'
+Traceback (most recent call last):
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 48, in start
+    await self._listen_messages(websocket)
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 95, in _listen_messages
+    await asyncio.gather(
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 89, in process_messages
+    await self._handle_web_data2(data)
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/exchange/Listener.py", line 155, in _handle_web_data2
+    await self.state_manager.update_position(
+  File "/home/aziz/Desktop/TrailForge_v3/main_v2/state/StateManager.py", line 48, in update_position
+    await self.event_bus.publish("position_updated", PositionUpdatedEvent(symbol=symbol, updates=update.__dict__))
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: PositionUpdatedEvent.__init__() got an unexpected keyword argument 'updates'
+2025-05-12 23:06:22 - INFO - [main] Configuration loaded
+2025-05-12 23:06:23 - INFO - [main] Telegram notifier initiated
+2025-05-12 23:06:23 - INFO - [main] Event Bus initiated
+2025-05-12 23:06:33 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 23:06:33 - INFO - [main] Shared services initialized
+2025-05-12 23:06:33 - INFO - [main] Event handlers registered
+2025-05-12 23:06:33 - INFO - [MawLauncher] Telegram notifier initiated
+2025-05-12 23:06:37 - INFO - [MawLauncher] Set leverage for HYPE
+2025-05-12 23:06:46 - INFO - [MawLauncher] Opened first position for HYPE
+2025-05-12 23:06:47 - INFO - [MawLauncher] Set leverage for SUI
+2025-05-12 23:06:57 - INFO - [MawLauncher] Opened first position for SUI
+2025-05-12 23:06:58 - INFO - [MawLauncher] Set leverage for ADA
+2025-05-12 23:07:07 - INFO - [MawLauncher] Opened first position for ADA
+2025-05-12 23:07:07 - INFO - [main] WebSocket listener started
+2025-05-12 23:07:07 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 23:07:08 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 23:07:08 - INFO - [Listener] Subscribed to webData2 updates
+2025-05-12 23:07:25 - INFO - [Listener] Closing profitable position: HYPE
+2025-05-12 23:07:33 - INFO - [Listener] Closed HYPE position with profit.
+2025-05-12 23:07:33 - INFO - [Listener] Reopening HYPE position...
+2025-05-12 23:07:41 - INFO - [Listener] Finished reopening HYPE position.
+2025-05-12 23:07:41 - INFO - [Listener] Closing profitable position: HYPE
+2025-05-12 23:12:54 - INFO - [main] Configuration loaded
+2025-05-12 23:12:54 - INFO - [main] Telegram notifier initiated
+2025-05-12 23:12:54 - INFO - [main] Event Bus initiated
+2025-05-12 23:16:36 - INFO - [main] Configuration loaded
+2025-05-12 23:16:37 - INFO - [main] Telegram notifier initiated
+2025-05-12 23:16:37 - INFO - [main] Event Bus initiated
+2025-05-12 23:16:52 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 23:16:52 - INFO - [main] Shared services initialized
+2025-05-12 23:16:52 - INFO - [main] Event handlers registered
+2025-05-12 23:16:52 - INFO - [MawLauncher] Telegram notifier initiated
+2025-05-12 23:16:56 - INFO - [MawLauncher] Set leverage for HYPE
+2025-05-12 23:17:05 - INFO - [MawLauncher] Opened first position for HYPE
+2025-05-12 23:17:07 - INFO - [MawLauncher] Set leverage for SUI
+2025-05-12 23:17:16 - INFO - [MawLauncher] Opened first position for SUI
+2025-05-12 23:17:17 - INFO - [MawLauncher] Set leverage for ADA
+2025-05-12 23:17:26 - INFO - [MawLauncher] Opened first position for ADA
+2025-05-12 23:17:26 - INFO - [main] WebSocket listener started
+2025-05-12 23:17:26 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 23:17:27 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 23:17:27 - INFO - [Listener] Subscribed to webData2 updates
+2025-05-12 23:17:41 - INFO - [Listener] Closing profitable position: ADA
+2025-05-12 23:17:48 - INFO - [Listener] Closed ADA position with profit.
+2025-05-12 23:17:48 - INFO - [Listener] Reopening ADA position...
+2025-05-12 23:17:56 - INFO - [Listener] Finished reopening ADA position.
+2025-05-12 23:17:56 - INFO - [Listener] Closing profitable position: SUI
+2025-05-12 23:20:08 - INFO - [main] Configuration loaded
+2025-05-12 23:20:09 - INFO - [main] Telegram notifier initiated
+2025-05-12 23:20:09 - INFO - [main] Event Bus initiated
+2025-05-12 23:20:26 - INFO - [main] Hyperliquid Executor initiated
+2025-05-12 23:20:26 - INFO - [main] Shared services initialized
+2025-05-12 23:20:26 - INFO - [main] Event handlers registered
+2025-05-12 23:20:26 - INFO - [MawLauncher] Telegram notifier initiated
+2025-05-12 23:20:30 - INFO - [MawLauncher] Set leverage for HYPE
+2025-05-12 23:20:39 - INFO - [MawLauncher] Opened first position for HYPE
+2025-05-12 23:20:40 - INFO - [MawLauncher] Set leverage for SUI
+2025-05-12 23:20:49 - INFO - [MawLauncher] Opened first position for SUI
+2025-05-12 23:20:51 - INFO - [MawLauncher] Set leverage for ADA
+2025-05-12 23:20:59 - INFO - [MawLauncher] Opened first position for ADA
+2025-05-12 23:21:00 - INFO - [main] WebSocket listener started
+2025-05-12 23:21:00 - INFO - [Listener] Starting Hyperliquid WebSocket listener...
+2025-05-12 23:21:01 - INFO - [Listener] Connected to Hyperliquid WebSocket
+2025-05-12 23:21:01 - INFO - [Listener] Subscribed to webData2 updates
