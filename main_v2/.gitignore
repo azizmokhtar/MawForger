@@ -2,5 +2,16 @@
 BOT
 **/BOT
 
+
+
 # Ignore environment variables file
 .env
+
+# Ignore all __pycache__ directories anywhere in the project
+__pycache__/
+**/__pycache__/
+
+# Ignore logs directory at root and all nested logs directories
+/logs/
+
+**/*.log

@@ -107,7 +107,7 @@ class HyperliquidWebSocketListener:
         for pos in asset_positions:
             position_data = pos.get("position", {})
             coin = position_data.get("coin", "UNKNOWN")
-            print(f"checking {coin}")
+            #print(f"checking {coin}")
             szi = float(position_data.get("szi", 0))
             entry_px = float(position_data.get("entryPx", 0))
             position_value = float(position_data.get("positionValue", 0))
@@ -132,7 +132,7 @@ class HyperliquidWebSocketListener:
 
             # Check if trailing take profit should activate
             if pnl_percent >= self.TP and not position["ttp_active"]:
-                print("pnl over target and no ttp active")
+                logger.info("pnl over target and no ttp active")
                 await self.state_manager.update_position(
                     coin,
                     average_buy_price=entry_px,
@@ -150,12 +150,12 @@ class HyperliquidWebSocketListener:
 
             # If TTP active and threshold reached
             if position["ttp_active"] and position.get("peak_pnl", 0) - pnl_percent >= self.ttp_percent:
-                print("ttp active and hit ttp closing now")
+                #print("ttp active and hit ttp closing now")
                 await self._close_and_reopen_position(coin)
 
             # General update
             elif self.state_manager.has_position(coin):
-                print(f"just updating with pnl {pnl_percent}")
+                #print(f"just updating with pnl {pnl_percent}")
                 await self.state_manager.update_position(
                     coin,
                     update=PositionUpdatedEvent(
