@@ -154,7 +154,7 @@ class HyperliquidWebSocketListener:
             # If TTP active and threshold reached
             if position["ttp_active"] and position.get("peak_pnl", 0) - pnl_percent >= self.ttp_percent:
                 #print("ttp active and hit ttp closing now")
-                await self._close_and_reopen_position(coin)
+                await self._close_and_reopen_position(coin, pnl_percent)
 
             # General update
             elif self.state_manager.has_position(coin):
@@ -182,7 +182,7 @@ class HyperliquidWebSocketListener:
 
         #await self._check_for_new_symbols()
 
-    async def _close_and_reopen_position(self, coin: str):
+    async def _close_and_reopen_position(self, coin: str, pnl_percent: float):
         logger.info(f"Closing profitable position: {coin}")
         ticker = format_symbol(coin)
         try:
@@ -190,9 +190,8 @@ class HyperliquidWebSocketListener:
             position = self.state_manager.get_position(coin)
             limit_orders = position["limit_orders"]
             await self.hyperliquid_executor.cancelLimitOrders(self.deviations, ticker, limit_orders)
-
             logger.info(f"Closed {coin} position with profit.")
-            await self.event_bus.publish("position_closed", PositionClosedEvent(symbol=coin))
+            await self.event_bus.publish("position_closed", PositionClosedEvent(symbol=coin, final_pnl=pnl_percent))
 
             #remove_decision = await self.symbol_manager.is_pending_removal(coin)
             remove_decision= False
@@ -220,6 +219,7 @@ class HyperliquidWebSocketListener:
                     size_in_quote=0,
                     ttp_active=False
                 ))
+                await asyncio.sleep(1)
                 logger.info(f"Finished reopening {coin} position.")
             else:
                 logger.info(f"{coin} removed after closing.")
