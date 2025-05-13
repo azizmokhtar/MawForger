@@ -156,6 +156,7 @@ class HyperliquidWebSocketListener:
             # General update
             elif self.state_manager.has_position(coin):
                 #print(f"just updating with pnl {pnl_percent}")
+                logger.info(f"just updating {coin} with pnl {pnl_percent}")
                 await self.state_manager.update_position(
                     coin,
                     update=PositionUpdatedEvent(
