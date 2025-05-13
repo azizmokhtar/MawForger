@@ -135,11 +135,14 @@ class HyperliquidWebSocketListener:
                 logger.info("pnl over target and no ttp active")
                 await self.state_manager.update_position(
                     coin,
-                    average_buy_price=entry_px,
-                    pnl=pnl_percent,
-                    size_in_dollars=position_value,
-                    size_in_quote=szi,
-                    ttp_active=True
+                    update=PositionUpdatedEvent(
+                        symbol=coin,
+                        average_buy_price=entry_px,
+                        pnl=pnl_percent,
+                        size_in_dollars=position_value,
+                        size_in_quote=szi,
+                        ttp_active=True
+                    )
                 )
                 logger.info(f"TTP activated for {coin}")
                 await self.event_bus.publish("position_updated", PositionUpdatedEvent(
