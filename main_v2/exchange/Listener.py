@@ -1,14 +1,13 @@
 import asyncio
 import websockets
 import json
-import logging
-from typing import Optional, Dict, List
 from config.ConfigManager import ConfigManager
 from core.EventBus import EventBus
 from state.StateManager import StateManager
 from exchange.Hyperliquid import HyperliquidUtils
 from core.Events import PositionOpenedEvent, PositionUpdatedEvent, PositionClosedEvent
 from utils.Logger import get_logger
+from utils.PerformanceLogger import FastLogger
 
 
 logger = get_logger(__name__)
@@ -22,7 +21,8 @@ class HyperliquidWebSocketListener:
         config: ConfigManager,
         state_manager: StateManager,
         hyperliquid_executor: HyperliquidUtils,
-        event_bus: EventBus
+        event_bus: EventBus,
+        perf_logger = FastLogger
     ):
         self.user_address = config.get("PUBLIC_USER_ADDRESS")
         self.max_retries = config.get("CONNECTION_ERROR_MAX_RETRIES")
@@ -37,6 +37,10 @@ class HyperliquidWebSocketListener:
         self.event_bus = event_bus
         self.websocket_uri = "wss://api.hyperliquid.xyz/ws"
         self.running = True
+        self.perf_logger = perf_logger
+        self._close_and_reopen_position = self.perf_logger.measure_async(
+            "close_and_reopen", sample_rate=1
+        )(self._close_and_reopen_position)
 
     async def start(self):
         logger.info("Starting Hyperliquid WebSocket listener...")
@@ -47,8 +51,10 @@ class HyperliquidWebSocketListener:
                     await self._subscribe(websocket)
                     await self._listen_messages(websocket)
             except (websockets.exceptions.ConnectionClosed, ConnectionError) as e:
-                logger.error(f"WebSocket connection lost: {e}. Retrying in {self.retry_delay} seconds...")
-                await asyncio.sleep(self.retry_delay)
+                retry_count += 1
+                if retry_count > self.max_retries:
+                    logger.error(f"WebSocket connection lost with error: {e}. Retrying in {self.retry_delay} seconds...")
+                    await asyncio.sleep(self.retry_delay)
             except Exception as e:
                 logger.exception(f"Unexpected error in WebSocket: {e}")
                 await asyncio.sleep(self.retry_delay)
@@ -118,16 +124,27 @@ class HyperliquidWebSocketListener:
             position = self.state_manager.get_position(coin)
 
             if position is None:
+                logger.warning(f"Unexpected open position found: {coin}, Setting limit orders...")
+                ticker = format_symbol(coin)
+                limit_orders = await self.hyperliquid_executor.create_batch_limit_buy_order_custom_dca(
+                    entry_px, self.buy_size, self.multiplier, ticker, self.deviations
+                )
+                logger.warning(f"Limit orders set, now adding it to DB.")
                 await self.state_manager.add_position(
                     symbol=coin,
                     average_buy_price=entry_px,
                     pnl=pnl_percent,
+                    peak_pnl=pnl_percent,
                     size_in_dollars=position_value,
                     size_in_quote=szi,
-                    limit_orders={},
+                    limit_orders=limit_orders,
                     ttp_active=False
                 )
-                logger.warning(f"Unexpected open position found: {coin}, added to manager")
+                await self.event_bus.publish("position_opened", PositionOpenedEvent(
+                    symbol=coin,
+                    ttp_active=True
+                    )
+                )
                 continue
 
             # Check if trailing take profit should activate
@@ -139,6 +156,7 @@ class HyperliquidWebSocketListener:
                         symbol=coin,
                         average_buy_price=entry_px,
                         pnl=pnl_percent,
+                        peak_pnl=pnl_percent,
                         size_in_dollars=position_value,
                         size_in_quote=szi,
                         ttp_active=True
@@ -154,12 +172,12 @@ class HyperliquidWebSocketListener:
             # If TTP active and threshold reached
             if position["ttp_active"] and position.get("peak_pnl", 0) - pnl_percent >= self.ttp_percent:
                 #print("ttp active and hit ttp closing now")
-                await self._close_and_reopen_position(coin, pnl_percent)
+                await self._close_and_reopen_position(coin, pnl_percent)###
 
             # General update
             elif self.state_manager.has_position(coin):
                 #print(f"just updating with pnl {pnl_percent}")
-                logger.info(f"just updating {coin} with pnl {pnl_percent}")
+                #logger.info(f"just updating {coin} with pnl {pnl_percent}")
                 await self.state_manager.update_position(
                     coin,
                     update=PositionUpdatedEvent(
@@ -201,12 +219,13 @@ class HyperliquidWebSocketListener:
                 limit_orders = await self.hyperliquid_executor.create_batch_limit_buy_order_custom_dca(
                     order[0], self.buy_size, self.multiplier, ticker, self.deviations
                 )
-                await self.state_manager.update_position(
+                await self.state_manager.update_position(  #add pak pnl
                     coin,
                     update=PositionUpdatedEvent(
                         symbol=coin,
                         average_buy_price=order[0],
                         pnl=0.0,
+                        peak_pnl=0.0,
                         size_in_dollars=self.buy_size,
                         limit_orders=limit_orders,
                         ttp_active=False

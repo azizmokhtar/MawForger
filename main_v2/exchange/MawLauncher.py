@@ -57,4 +57,4 @@ class MawStartupLauncher:
                 await self.telegram_notifier._safe_send(f"Opened first position for: {symbol}")
             except Exception as e:
                 logger.error(f"Error placing first order for {symbol}: {e}")
-                await self.telegram_notifier._safe_send(f"ERROR - Error placing first order for: {symbol}")
+                await self.telegram_notifier._safe_send(f"ERROR - Error placing first order for: {symbol}, error: {e}")

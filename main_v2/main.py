@@ -9,6 +9,7 @@ from notifier.TelegramMessenger import TelegramNotifier
 from core.EventBus import EventBus
 from exchange.Listener import HyperliquidWebSocketListener
 from exchange.MawLauncher import MawStartupLauncher
+from utils.PerformanceLogger import FastLogger
 
 logger = get_logger(__name__)
 
@@ -23,6 +24,9 @@ async def main():
     logger.info("Telegram notifier initiated")
     # Initialize EventBus
     event_bus = EventBus()
+
+    # Initialize Performance logger
+    perf_logger =  FastLogger(log_file="logs/performance.csv", buffer_size=10, enabled=True)
 
     # Initialize shared services
     state_manager = StateManager(event_bus=event_bus)
@@ -48,7 +52,8 @@ async def main():
         config=config,
         state_manager=state_manager,
         hyperliquid_executor=hyperliquid_executor,
-        event_bus=event_bus
+        event_bus=event_bus,
+        perf_logger= perf_logger
     )
 
     asyncio.create_task(listener.start())
